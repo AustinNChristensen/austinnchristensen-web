@@ -2,7 +2,7 @@ export const switchThemeDuration = 0.5;
 
 export const navigationItems = [
     { name: 'Home', href: '/' },
-    { name: 'Blog', href: '/blog' },
+    { name: 'Blog', href: 'https://paragraph.xyz/@austinchristensen.eth', external: true },
     { name: 'About', href: '/about' },
 ];
 
