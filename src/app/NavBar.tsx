@@ -44,7 +44,7 @@ export const NavBar = () => {
                         <a
                             key={item.name}
                             href={item.href}
-                            target={item.external ? '_blank' : ''}
+                            target={item?.external ? '_blank' : ''}
                             className="text-sm font-semibold leading-6  text-black dark:text-white"
                         >
                             {item.name}
@@ -77,7 +77,7 @@ export const NavBar = () => {
                                     <a
                                         key={item.name}
                                         href={item.href}
-                                        target={item.external ? '_blank' : ''}
+                                        target={item?.external ? '_blank' : ''}
                                         className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-black dark:text-white hover:bg-gray-50 hover:dark:bg-gray-800"
                                     >
                                         {item.name}
