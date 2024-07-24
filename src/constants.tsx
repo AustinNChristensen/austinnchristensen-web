@@ -25,7 +25,7 @@ export const navigationItems: NavigationItem[] = [
     { name: 'About', href: '/about', visible: true  },
     { name: 'Projects', href: '/projects', visible: false  },
     { name: 'Speaking', href: '/speaking', visible: false },
-    { name: 'Uses', href: '/uses', visible: false  },
+    { name: 'Uses', href: '/uses', visible: true  },
 ];
 
 export const socialNavigation = [

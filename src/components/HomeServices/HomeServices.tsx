@@ -1,7 +1,7 @@
 import { ContentWrapper } from '../ContentWrapper/ContentWrapper';
 
 const services = [
-    { name: 'Blog', visible: true, ctaLink: 'https://paragraph.xyz/@austinchristensen.eth' },
+    { name: 'Blog', visible: false, ctaLink: 'https://paragraph.xyz/@austinchristensen.eth' },
     { name: 'Podcast', visible: false, ctaLink: '' },
     { name: 'Courses', visible: false, ctaLink: '' },
 ];
