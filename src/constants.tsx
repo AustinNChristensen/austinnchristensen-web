@@ -14,7 +14,14 @@ import { GitHubIcon, InstagramIcon, LinkedInIcon, XIcon } from './components/Soc
 
 export const switchThemeDuration = 0.5;
 
-export const navigationItems = [
+export interface NavigationItem {
+    name: string;
+    href: string;
+    visible: boolean;
+    external?: boolean;
+}
+
+export const navigationItems: NavigationItem[] = [
     { name: 'About', href: '/about', visible: true  },
     { name: 'Projects', href: '/projects', visible: false  },
     { name: 'Speaking', href: '/speaking', visible: false },
