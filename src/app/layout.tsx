@@ -1,42 +1,39 @@
-import type { Metadata } from 'next';
-import { Sansita } from 'next/font/google';
-import './globals.css';
-import { NavBar } from './NavBar';
-import { Footer } from './Footer';
-import { switchThemeDuration } from '../constants';
-import { ThemeProvider } from '@/components/ThemeProvider';
+import { type Metadata } from 'next'
 
-const sansita = Sansita({
-    weight: '400',
-    subsets: ['latin', 'latin-ext'],
-    display: 'swap',
-});
+import { Providers } from '@/app/providers'
+import { Layout } from '@/components/Layout'
+
+import '@/styles/tailwind.css'
 
 export const metadata: Metadata = {
-    title: 'Austin N Christensen',
-    description: 'Personal Website for Austin Christensen',
-};
+  title: {
+    template: '%s - Austin Christensen',
+    default:
+      'Austin Christensen - Software developer, founder, and thrill-seeker',
+  },
+  description:
+    'I’m Austin, a software developer based in Salt Lake City, Utah. I’m a builder who works just as well on greenfied projects as I do with legacy conversions.',
+  alternates: {
+    types: {
+      'application/rss+xml': `${process.env.NEXT_PUBLIC_SITE_URL}/feed.xml`,
+    },
+  },
+}
 
 export default function RootLayout({
-    children,
+  children,
 }: {
-    children: React.ReactNode;
+  children: React.ReactNode
 }) {
-    return (
-        <html lang="en">
-            <body
-                className={`bg-white transition duration-500 dark:bg-gray-900 ${sansita.className} ${switchThemeDuration}`}
-            >
-                <ThemeProvider
-                    attribute="class"
-                    defaultTheme="system"
-                    enableSystem
-                >
-                    <NavBar />
-                    <main className="isolate mx-auto flex flex-col max-w-100 items-center justify-between p-6 lg:px-8">{children}</main>
-                    <Footer />
-                </ThemeProvider>
-            </body>
-        </html>
-    );
+  return (
+    <html lang="en" className="h-full antialiased" suppressHydrationWarning>
+      <body className="flex h-full bg-zinc-50 dark:bg-black">
+        <Providers>
+          <div className="flex w-full">
+            <Layout>{children}</Layout>
+          </div>
+        </Providers>
+      </body>
+    </html>
+  )
 }
