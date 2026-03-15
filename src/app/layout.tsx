@@ -1,4 +1,5 @@
 import { type Metadata } from 'next'
+import { GoogleAnalytics } from '@next/third-parties/google'
 
 import { Providers } from '@/app/providers'
 import { Layout } from '@/components/Layout'
@@ -15,7 +16,7 @@ export const metadata: Metadata = {
     'I’m Austin, a software developer based in Salt Lake City, Utah. I’m a builder who works just as well on greenfied projects as I do with legacy conversions.',
   alternates: {
     types: {
-      'application/rss+xml': `${process.env.NEXT_PUBLIC_SITE_URL}/feed.xml`,
+      'application/rss+xml': `${process.env.NEXT_PUBLIC_SITE_URL || 'https://austinnchristensen.com'}/feed.xml`,
     },
   },
 }
@@ -34,6 +35,9 @@ export default function RootLayout({
           </div>
         </Providers>
       </body>
+      {process.env.NEXT_PUBLIC_GA_ID && (
+        <GoogleAnalytics gaId={process.env.NEXT_PUBLIC_GA_ID} />
+      )}
     </html>
   )
 }
