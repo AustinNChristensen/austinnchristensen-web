@@ -98,11 +98,11 @@ export default function About() {
                                 ),
                         )}
                         <SocialLink
-                            href="mailto:austin@christensen.onl"
+                            href="mailto:austin@christensenequity.com"
                             icon={MailIcon}
                             className="mt-8 border-t border-zinc-100 pt-8 dark:border-zinc-700/40"
                         >
-                            austin@christensen.onl
+                            austin@christensenequity.com
                         </SocialLink>
                     </ul>
                 </div>
