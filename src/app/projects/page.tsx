@@ -1,44 +1,30 @@
 import { type Metadata } from 'next'
 import Image from 'next/image'
-import logoHyatt from '@/images/logos/hyatt.svg'
+import logoSmartLocker from '@/images/logos/smartLocker.svg'
 import { Card } from '@/components/Card'
 import { SimpleLayout } from '@/components/SimpleLayout'
 
 const projects = [
   {
-    name: 'Planetaria',
+    name: 'Backcountry Hunter',
     description:
-      'Creating technology to empower civilians to explore space on their own terms.',
-    link: { href: 'http://planetaria.tech', label: 'planetaria.tech' },
-    logo: logoHyatt,
+      'Gear management and loadout builder for hunters and backcountry athletes. Track pack weight, build shareable loadouts, and discover creator-curated gear lists.',
+    link: { href: 'https://backcountryhunter.app', label: 'backcountryhunter.app' },
+    logo: logoSmartLocker,
   },
   {
-    name: 'Animaginary',
+    name: 'Points Mafia',
     description:
-      'High performance web animation library, hand-written in optimized WASM.',
-    link: { href: '#', label: 'github.com' },
-    logo: logoHyatt,
+      'The insider guide to credit card points, miles, and travel rewards. A weekly newsletter and suite of tools for maximizing your points and booking award travel.',
+    link: { href: 'https://pointsmafia.com', label: 'pointsmafia.com' },
+    logo: logoSmartLocker,
   },
   {
-    name: 'HelioStream',
+    name: 'Smart Locker USA',
     description:
-      'Real-time video streaming library, optimized for interstellar transmission.',
-    link: { href: '#', label: 'github.com' },
-    logo: logoHyatt,
-  },
-  {
-    name: 'cosmOS',
-    description:
-      'The operating system that powers our Planetaria space shuttles.',
-    link: { href: '#', label: 'github.com' },
-    logo: logoHyatt,
-  },
-  {
-    name: 'OpenShuttle',
-    description:
-      'The schematics for the first rocket I designed that successfully made it to orbit.',
-    link: { href: '#', label: 'github.com' },
-    logo: logoHyatt,
+      'SaaS platform for meat processors that digitized locker management, customer pickups, and inventory tracking. Built, grew, and sold.',
+    link: { href: 'https://smartlockerusa.com', label: 'smartlockerusa.com' },
+    logo: logoSmartLocker,
   },
 ]
 
@@ -55,14 +41,14 @@ function LinkIcon(props: React.ComponentPropsWithoutRef<'svg'>) {
 
 export const metadata: Metadata = {
   title: 'Projects',
-  description: 'Things I’ve made trying to put my dent in the universe.',
+  description: 'Software products I\'ve built — from SaaS exits to apps still in the wild.',
 }
 
 export default function Projects() {
   return (
     <SimpleLayout
-      title="Things I’ve made trying to put my dent in the universe."
-      intro="I’ve worked on tons of little projects over the years but these are the ones that I’m most proud of. Many of them are open-source, so if you see something that piques your interest, check out the code and contribute if you have ideas for how it can be improved."
+      title="Software I\'ve built and shipped."
+      intro="I\'ve spent the last several years building products alongside my engineering career. Some are live and growing, one has been sold. These are the ones I\'m most proud of."
     >
       <ul
         role="list"
