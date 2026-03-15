@@ -64,21 +64,21 @@ export default function About() {
                 </div>
                 <div className="lg:order-first lg:row-span-2">
                     <h1 className="text-4xl font-bold tracking-tight text-zinc-800 sm:text-5xl dark:text-zinc-100">
-                        I'm Austin Christensen. I live in Salt Lake City, where
+                        I&apos;m Austin Christensen. I live in Salt Lake City, where
                         I build software and ship products.
                     </h1>
                     <div className="mt-6 space-y-7 text-base text-zinc-600 dark:text-zinc-400">
                         <p>
-                            I'm a full-stack software engineer with a decade of experience building web applications at scale. I currently work at Hyatt and Costco, where I lead feature development across complex, high-traffic systems.
+                            I&apos;m a full-stack software engineer with a decade of experience building web applications at scale. I currently work at Hyatt and Costco, where I lead feature development across complex, high-traffic systems.
                         </p>
                         <p>
-                            Outside of my day job, I build and ship my own software products. I founded Smart Locker USA, a SaaS platform for meat processors that I grew and sold. These days I'm focused on Backcountry Hunter, a gear management app for hunters and backcountry athletes, and Points Mafia, a newsletter and toolset for travel rewards enthusiasts.
+                            Outside of my day job, I build and ship my own software products. I founded Smart Locker USA, a SaaS platform for meat processors that I grew and sold. These days I&apos;m focused on Backcountry Hunter, a gear management app for hunters and backcountry athletes, and Points Mafia, a newsletter and toolset for travel rewards enthusiasts.
                         </p>
                         <p>
-                            My stack of choice is TypeScript, Next.js, React, and Supabase -- I lean toward managed services and clean architecture that lets small teams move fast without incurring technical debt they can't pay back.
+                            My stack of choice is TypeScript, Next.js, React, and Supabase -- I lean toward managed services and clean architecture that lets small teams move fast without incurring technical debt they can&apos;t pay back.
                         </p>
                         <p>
-                            When I'm not at a keyboard, I'm usually on skis in the Wasatch, on a bike, or on a tennis court. Salt Lake City is a good place to be if you want to keep that balance.
+                            When I&apos;m not at a keyboard, I&apos;m usually on skis in the Wasatch, on a bike, or on a tennis court. Salt Lake City is a good place to be if you want to keep that balance.
                         </p>
                     </div>
                 </div>
