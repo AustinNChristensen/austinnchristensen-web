@@ -45,7 +45,7 @@ function MailIcon(props: React.ComponentPropsWithoutRef<'svg'>) {
 export const metadata: Metadata = {
     title: 'About',
     description:
-        'I’m Austin Christensen. I live in Salt Lake City, where I build the future.',
+        'I am Austin Christensen. I live in Salt Lake City, where I build software and ship products.',
 };
 
 export default function About() {
@@ -64,36 +64,21 @@ export default function About() {
                 </div>
                 <div className="lg:order-first lg:row-span-2">
                     <h1 className="text-4xl font-bold tracking-tight text-zinc-800 sm:text-5xl dark:text-zinc-100">
-                        I’m Austin Christensen. I live in Salt Lake City, where
-                        I build amazing apps and websites.
+                        I&apos;m Austin Christensen. I live in Salt Lake City, where
+                        I build software and ship products.
                     </h1>
                     <div className="mt-6 space-y-7 text-base text-zinc-600 dark:text-zinc-400">
                         <p>
-                            During high school, I balanced academics with my
-                            love for football, earning recognition as Academic
-                            All-State. These formative years instilled in me
-                            discipline and teamwork—qualities that continue to
-                            shape my professional approach.
+                            I&apos;m a full-stack software engineer with a decade of experience building web applications at scale. I currently work at Hyatt and Costco, where I lead feature development across complex, high-traffic systems.
                         </p>
                         <p>
-                            I graduated from Drake University with a Bachelor of
-                            Science in Computer Science, where I actively
-                            participated in extracurricular activities like Phi
-                            Gamma Delta and Delta Sigma Pi. These experiences
-                            nurtured my leadership and teamwork skills.
+                            Outside of my day job, I build and ship my own software products. I founded Smart Locker USA, a SaaS platform for meat processors that I grew and sold. These days I&apos;m focused on Backcountry Hunter, a gear management app for hunters and backcountry athletes, and Points Mafia, a newsletter and toolset for travel rewards enthusiasts.
                         </p>
                         <p>
-                            Currently, I specialize in TypeScript, NextJS, and
-                            React, leading transformative projects that
-                            challenge me to deliver scalable solutions using
-                            technologies like GraphQL, MongoDB, and AWS.
+                            My stack of choice is TypeScript, Next.js, React, and Supabase -- I lean toward managed services and clean architecture that lets small teams move fast without incurring technical debt they can&apos;t pay back.
                         </p>
                         <p>
-                            Outside of work, I enjoy staying active with hobbies
-                            such as tennis, pickleball, skiing, and cycling.
-                            These activities not only keep me physically fit but
-                            also provide a balance to my professional life,
-                            fostering creativity and well-being.
+                            When I&apos;m not at a keyboard, I&apos;m usually on skis in the Wasatch, on a bike, or on a tennis court. Salt Lake City is a good place to be if you want to keep that balance.
                         </p>
                     </div>
                 </div>
@@ -113,11 +98,11 @@ export default function About() {
                                 ),
                         )}
                         <SocialLink
-                            href="mailto:austin@christensen.onl"
+                            href="mailto:austin@christensenequity.com"
                             icon={MailIcon}
                             className="mt-8 border-t border-zinc-100 pt-8 dark:border-zinc-700/40"
                         >
-                            austin@christensen.onl
+                            austin@christensenequity.com
                         </SocialLink>
                     </ul>
                 </div>
