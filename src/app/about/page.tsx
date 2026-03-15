@@ -69,7 +69,7 @@ export default function About() {
                     </h1>
                     <div className="mt-6 space-y-7 text-base text-zinc-600 dark:text-zinc-400">
                         <p>
-                            I&apos;m a full-stack software engineer with a decade of experience building web applications at scale. I currently work at Hyatt and Costco, where I lead feature development across complex, high-traffic systems.
+                            I&apos;m a full-stack software engineer with a decade of experience building web applications at scale. I work across large enterprise systems and my own software products.
                         </p>
                         <p>
                             Outside of my day job, I build and ship my own software products. I founded Smart Locker USA, a SaaS platform for meat processors that I grew and sold. These days I&apos;m focused on Backcountry Hunter, a gear management app for hunters and backcountry athletes, and Points Mafia, a newsletter and toolset for travel rewards enthusiasts.
