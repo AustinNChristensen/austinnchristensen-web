@@ -41,7 +41,7 @@ function LinkIcon(props: React.ComponentPropsWithoutRef<'svg'>) {
 
 export const metadata: Metadata = {
   title: 'Projects',
-  description: 'Software products I've built — from SaaS exits to apps still in the wild.',
+  description: "Software products I've built — from SaaS exits to apps still in the wild.",
 }
 
 export default function Projects() {
