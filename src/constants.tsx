@@ -23,8 +23,8 @@ export interface NavigationItem {
 
 export const navigationItems: NavigationItem[] = [
     { name: 'About', href: '/about', visible: true  },
-    { name: 'Projects', href: '/projects', visible: false  },
-    { name: 'Speaking', href: '/speaking', visible: false },
+    { name: 'Projects', href: '/projects', visible: true  },
+    { name: 'Contact', href: '/contact', visible: true },
     { name: 'Uses', href: '/uses', visible: true  },
 ];
 
