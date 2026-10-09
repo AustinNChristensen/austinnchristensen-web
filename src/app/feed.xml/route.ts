@@ -4,7 +4,7 @@ import { Feed } from 'feed'
 
 export async function GET(req: Request) {
   let siteUrl =
-    process.env.NEXT_PUBLIC_SITE_URL || 'https://austinnchristensen.com'
+    process.env.NEXT_PUBLIC_SITE_URL || 'https://austinchristensen.tech'
 
   let author = {
     name: 'Austin Christensen',
