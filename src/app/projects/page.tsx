@@ -6,25 +6,42 @@ import { SimpleLayout } from '@/components/SimpleLayout'
 
 const projects = [
   {
+    name: 'BrandMan',
+    description:
+      'An AI-native brand manager that brings brand mission, voice, content, and review into one workspace. AI agents and people work from the same brand context, with explicit approval before publishing.',
+    link: { href: 'https://usebrandman.com', label: 'usebrandman.com' },
+    logo: null,
+    initials: 'BM',
+  },
+  {
     name: 'Backcountry Hunter',
     description:
       'Gear management and loadout builder for hunters and backcountry athletes. Track pack weight, build shareable loadouts, and discover creator-curated gear lists.',
-    link: { href: 'https://backcountryhunter.app', label: 'backcountryhunter.app' },
-    logo: logoSmartLocker,
+    link: {
+      href: 'https://backcountryhunter.app',
+      label: 'backcountryhunter.app',
+    },
+    logo: null,
+    initials: 'BH',
   },
   {
     name: 'Points Mafia',
     description:
-      'The insider guide to credit card points, miles, and travel rewards. A weekly newsletter and suite of tools for maximizing your points and booking award travel.',
+      'A newsletter and website about credit card points, miles, and travel rewards.',
     link: { href: 'https://pointsmafia.com', label: 'pointsmafia.com' },
-    logo: logoSmartLocker,
+    logo: null,
+    initials: 'PM',
   },
   {
     name: 'Smart Locker USA',
     description:
       'SaaS platform for meat processors that digitized locker management, customer pickups, and inventory tracking. Built, grew, and sold.',
-    link: { href: 'https://smartlockerusa.com', label: 'smartlockerusa.com' },
+    link: {
+      href: 'https://smartlockerusa.com',
+      label: 'smartlockerusa.com',
+    },
     logo: logoSmartLocker,
+    initials: 'SL',
   },
 ]
 
@@ -41,14 +58,15 @@ function LinkIcon(props: React.ComponentPropsWithoutRef<'svg'>) {
 
 export const metadata: Metadata = {
   title: 'Projects',
-  description: 'Software products I have built -- from SaaS exits to apps still in the wild.',
+  description:
+    'Software products I have built -- from SaaS exits to apps still in the wild.',
 }
 
 export default function Projects() {
   return (
     <SimpleLayout
       title="Software I've built and shipped."
-      intro="I've spent the last several years building products alongside my engineering career. Some are live and growing, one has been sold. These are the ones I'm most proud of."
+      intro="I've spent the last several years building products alongside my engineering career, from my current work on BrandMan to Smart Locker USA, which I grew and sold."
     >
       <ul
         role="list"
@@ -57,12 +75,21 @@ export default function Projects() {
         {projects.map((project) => (
           <Card as="li" key={project.name}>
             <div className="relative z-10 flex h-12 w-12 items-center justify-center rounded-full bg-white shadow-md shadow-zinc-800/5 ring-1 ring-zinc-900/5 dark:border dark:border-zinc-700/50 dark:bg-zinc-800 dark:ring-0">
-              <Image
-                src={project.logo}
-                alt=""
-                className="h-8 w-8"
-                unoptimized
-              />
+              {project.logo ? (
+                <Image
+                  src={project.logo}
+                  alt=""
+                  className="h-8 w-8"
+                  unoptimized
+                />
+              ) : (
+                <span
+                  aria-hidden="true"
+                  className="text-sm font-semibold tracking-tight text-teal-600 dark:text-teal-400"
+                >
+                  {project.initials}
+                </span>
+              )}
             </div>
             <h2 className="mt-6 text-base font-semibold text-zinc-800 dark:text-zinc-100">
               <Card.Link href={project.link.href}>{project.name}</Card.Link>
